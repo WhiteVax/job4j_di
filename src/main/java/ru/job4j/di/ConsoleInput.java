@@ -1,7 +1,14 @@
 package ru.job4j.di;
 
+import org.springframework.stereotype.Component;
+
+/**
+ * Component - помечаются классы которые необходимо зарегистрировать в context.
+ */
+
 import java.util.Scanner;
 
+@Component
 public class ConsoleInput {
 
     private Scanner scanner = new Scanner(System.in);
